@@ -61,7 +61,7 @@ export function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
           >
-            THE SPARK FOR
+            I SOLVE
           </motion.span>
           <motion.span
             className="block text-white"
@@ -69,7 +69,7 @@ export function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
           >
-            ALL THINGS
+            PROBLEMS
           </motion.span>
           <motion.span
             className="block transition-colors duration-0 cursor-default"
@@ -81,7 +81,7 @@ export function HeroSection() {
             onMouseLeave={() => setIsCreativeHovered(false)}
             data-cursor="hover"
           >
-            CREATIVE
+            IN STYLE.
           </motion.span>
         </h1>
       </motion.div>

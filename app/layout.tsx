@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   title: "Creative Portfolio — Bold Digital Experiences",
   description:
     "A senior creative technologist crafting cinematic, editorial digital experiences with precision and intention.",
-    generator: 'v0.app'
+  generator: "v0.app",
 }
 
 export const viewport: Viewport = {
@@ -32,12 +32,21 @@ export const viewport: Viewport = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode
-}>) {
+}) {
   return (
     <html lang="en" className={`${inter.variable} ${interTight.variable}`}>
-      <body className="font-sans antialiased bg-[#000000] text-white">
+      <body className="font-sans antialiased text-white">
+        {/* Fixed global background */}
+        <div className="fixed inset-0 -z-10">
+          <img
+            src="/DDCDDAA0-B510-478B-8D2A-F72F802F115B_1_201_a.jpeg"
+            alt="Background"
+            className="w-full h-full object-cover"
+          />
+        </div>
+
         <CustomCursor />
         <PageTransition />
         {children}

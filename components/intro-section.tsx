@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 
 export function IntroSection() {
   return (
-    <section className="relative py-32 md:py-48 px-6 md:px-12 lg:px-24 bg-black">
+    <section className="relative py-32 md:py-48 px-6 md:px-12 lg:px-24">
       <motion.div
         className="max-w-4xl"
         initial={{ opacity: 0, y: 20 }}
@@ -20,7 +20,9 @@ export function IntroSection() {
           intentional.
           <br />
           <br />
-          <span className="text-white">Every detail exists for a reason, and nothing is left to chance.</span>
+          <span className="text-white">
+            Every detail exists for a reason, and nothing is left to chance.
+          </span>
         </p>
       </motion.div>
     </section>

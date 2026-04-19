@@ -96,7 +96,7 @@ export function IntroAnimation() {
                 transition={{ delay: 1.2, duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
               >
                 <span className="w-12 h-[1px] bg-[#CFCFCF]" />
-                <span className="text-xs md:text-sm tracking-[0.3em] uppercase text-[#CFCFCF]">Creative Developer</span>
+                <span className="text-xs md:text-sm tracking-[0.3em] uppercase text-[#CFCFCF]">Engineer on caffine</span>
                 <span className="w-12 h-[1px] bg-[#CFCFCF]" />
               </motion.div>
             </motion.div>

@@ -3,7 +3,29 @@
 import { motion } from "framer-motion"
 import { useState } from "react"
 
-const techStack = ["React", "Next.js", "Tailwind CSS", "Framer Motion", "GSAP", "TypeScript"]
+const techStack = [
+  "TypeScript",
+  "Node APIs",
+  "MongoDB",
+  "Real-time Systems",
+  "AI Systems",
+  "NLP",
+  "Scalable Systems",
+  "Microservices",
+  "System Architecture",
+  "Full Stack",
+  "Performance Optimization",
+  "LLMs",
+  "Distributed Systems",
+  "Event-Driven Architecture",
+  "API Design",
+  "Backend Engineering",
+  "Async Programming",
+  "Caching Strategies",
+  "Data Pipelines",
+  "Cloud Infrastructure",
+  "Developer Tooling",
+]
 
 export function MarqueeSection() {
   const [isPaused, setIsPaused] = useState(false)
@@ -18,7 +40,7 @@ export function MarqueeSection() {
         animate={{ x: isPaused ? 0 : "-50%" }}
         transition={{
           x: {
-            duration: 2.5,
+            duration: 10,
             repeat: Number.POSITIVE_INFINITY,
             repeatType: "loop",
             ease: "linear",

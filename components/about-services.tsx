@@ -4,11 +4,12 @@ import { motion } from "framer-motion"
 import { useState } from "react"
 
 const services = [
-  { title: "Brand Strategy", description: "Defining the core identity and positioning" },
-  { title: "Digital Design", description: "Crafting interfaces that communicate clearly" },
-  { title: "Motion Design", description: "Adding life through purposeful animation" },
-  { title: "Creative Direction", description: "Guiding projects from concept to completion" },
-  { title: "Development", description: "Building with modern web technologies" },
+  { title: "Data Structures and Algorithms", description: "Solving problems with efficient logic" },
+  { title: "Deep Learning", description: "Building intelligent model-driven systems" },
+  { title: "System Design", description: "Designing scalable and reliable architecture" },
+  { title: "Cloud Solutions", description: "Deploying resilient services on modern cloud platforms" },
+  { title: "Software Management", description: "Leading delivery with clear engineering process" },
+  { title: "Generative AI", description: "Creating intelligent systems with modern AI models" },
 ]
 
 export function AboutServices() {
@@ -23,7 +24,7 @@ export function AboutServices() {
         transition={{ duration: 0.5 }}
         className="text-sm text-[#CFCFCF] tracking-[0.3em] uppercase mb-16"
       >
-        Services
+        Interests and Expertise
       </motion.p>
 
       <div className="space-y-0">
@@ -70,11 +71,11 @@ export function AboutServices() {
       >
         <p className="text-[#CFCFCF] text-lg mb-6">Interested in working together?</p>
         <a
-          href="mailto:hello@studio.com"
+          href="mailto:afnankaif056@gmail.com"
           data-cursor="hover"
           className="inline-block font-[family-name:var(--font-inter-tight)] text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white hover:text-[#F04A24] transition-colors duration-0"
         >
-          hello@studio.com
+          afnankaif056@gmail.com
         </a>
       </motion.div>
     </section>

@@ -4,16 +4,42 @@ import { motion } from "framer-motion"
 import { ProjectCard } from "./project-card"
 
 const projects = [
-  { title: "Project One", category: "Brand & Motion", slug: "project-one" },
-  { title: "Project Two", category: "Interactive Web Experience", slug: "project-two" },
-  { title: "Project Three", category: "Creative Technology Platform", slug: "project-three" },
-  { title: "Project Four", category: "Editorial Website", slug: "project-four" },
-  { title: "Project Five", category: "Digital Product Interface", slug: "project-five" },
-  { title: "Project Six", category: "Experimental Interaction", slug: "project-six" },
-  { title: "Project Seven", category: "Visual Identity System", slug: "project-seven" },
-  { title: "Project Eight", category: "Immersive Landing Page", slug: "project-eight" },
-  { title: "Project Nine", category: "Motion-Led Portfolio", slug: "project-nine" },
-  { title: "Project Ten", category: "Conceptual Web Experiment", slug: "project-ten" },
+  {
+    title: "Movie Ticket Booking Platform",
+    category: "Full Stack Web Application",
+    slug: "project-one",
+    image: "/movie-ticket-home.png",
+  },
+  {
+    title: "Real-Time Multiplayer Chess",
+    category: "Interactive Web Application",
+    slug: "project-two",
+    image: "/chess-app-cover.png",
+  },
+  {
+    title: "AI Wearable Stroke Detection System",
+    category: "AI & Healthcare Technology",
+    slug: "project-three",
+    image: "/healthmonitor-dashboard.png",
+  },
+  {
+    title: "Space Shooter",
+    category: "Frontend Game Development",
+    slug: "project-four",
+    image: "/space-shooter-landing.png",
+  },
+  {
+    title: "Recommendation Engine",
+    category: "Machine Learning / Personalization System",
+    slug: "project-five",
+    image: "/recommendation-engine-cover.png",
+  },
+  {
+    title: "Cafe E-Commerce & Food Delivery Platform",
+    category: "Full-Stack Web Application",
+    slug: "project-six",
+    image: "/ecommerce-hero.png",
+  },
 ]
 
 export function ProjectsSection() {
@@ -37,7 +63,7 @@ export function ProjectsSection() {
             key={project.slug}
             title={project.title}
             category={project.category}
-            image={`/placeholder.svg?height=600&width=800&query=${encodeURIComponent(project.category + " dark minimal")}`}
+            image={project.image ?? `/placeholder.svg?height=600&width=800&query=${encodeURIComponent(project.category + " dark minimal")}`}
             href={`/projects/${project.slug}`}
             index={index}
           />

@@ -13,16 +13,15 @@ export function IntroSection() {
         transition={{ duration: 0.5 }}
       >
         <p className="text-xl md:text-2xl lg:text-3xl leading-relaxed text-[#CFCFCF] font-light">
-          I design digital experiences with a focus on clarity, structure, and interaction.
+          I build systems that can take a hit: real-time apps, AI workflows, booking engines, and product experiences
+          that do more than sit pretty.
           <br />
           <br />
-          My work combines visual systems, motion, and modern web technology to create interfaces that feel direct and
-          intentional.
+          My stack moves between frontend polish and backend logic, from WebSockets and payments to machine learning,
+          recommendation systems, and cloud-ready architecture.
           <br />
           <br />
-          <span className="text-white">
-            Every detail exists for a reason, and nothing is left to chance.
-          </span>
+          <span className="text-white">I care about speed, clarity, and the kind of engineering that survives real users.</span>
         </p>
       </motion.div>
     </section>

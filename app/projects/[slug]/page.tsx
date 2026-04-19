@@ -19,168 +19,138 @@ const projectsData: Record<
   }
 > = {
   "project-one": {
-    title: "Project One",
-    category: "Brand & Motion",
+    title: "Movie Ticket Booking Platform",
+    category: "Full Stack Web Application",
     year: "2025",
-    description: "A comprehensive brand identity and motion design system for a forward-thinking tech company.",
-    image: "/dark-abstract-brand-motion-design.jpg",
+    description: "A scalable movie ticket booking platform with secure authentication, real-time seat management, and seamless payment integration.",
+    image: "/movie-ticket-home.png",
     content: [
-      "The challenge was defining structure without restricting creativity. We needed to build a system that felt both consistent and alive.",
-      "Interaction was treated as feedback, not decoration. Every animation serves a purpose, reinforcing the brand's commitment to precision and innovation.",
-      "Motion was used only where it improved clarity. We established a vocabulary of subtle movements that guide the user's attention without distraction.",
+      "A full-stack movie ticket booking system designed to handle real-world scenarios like seat selection, concurrent bookings, and secure user authentication. The platform delivers a smooth and intuitive booking experience from browsing movies to final checkout.",
+      
+      "The backend is built using Express.js and MongoDB, following a modular and scalable architecture. Authentication is powered by Clerk, while Stripe integration enables secure online payments. Cloudinary is used for efficient media storage, and Nodemailer handles transactional emails such as booking confirmations.",
+      
+      "The system is event-driven and optimized for performance. Inngest is used for background workflows like sending emails and handling async processes, ensuring the main application remains responsive under load.",
+      
+      "Special focus was given to reliability and user experience. Seat availability is dynamically managed to prevent conflicts, and the API is structured with clean separation of concerns, making the system production-ready and easy to scale."
     ],
-    gallery: ["/dark-brand-identity-mockup.jpg", "/dark-motion-graphics-frame.jpg", "/dark-typography-specimen.jpg"],
-    next: { title: "Project Two", slug: "project-two" },
+    gallery: [
+      "/movie-ticket-home.png",
+      "/movie-ticket-details.png",
+      "/movie-ticket-seats.png",
+      "/movie-ticket-payment.png"
+    ],
+    next: { title: "Real-Time Multiplayer Chess", slug: "project-two" }
   },
   "project-two": {
-    title: "Project Two",
-    category: "Interactive Web Experience",
+    title: "Real-Time Multiplayer Chess",
+    category: "Interactive Web Application",
     year: "2025",
-    description: "An immersive web experience that pushes the boundaries of browser-based interaction.",
-    image: "/dark-interactive-web-experience-3d.jpg",
+    description: "A real-time multiplayer chess platform with room-based matchmaking, live synchronization, and seamless gameplay experience.",
+    image: "/chess-app-cover.png",
     content: [
-      "The goal was to create something that felt native to the web while delivering an experience typically reserved for native applications.",
-      "We developed custom shaders and interaction patterns that respond instantly to user input, creating a sense of direct manipulation.",
-      "Performance was non-negotiable. Every frame matters when you're building at 60fps.",
+      "A real-time chess application built to deliver smooth and synchronized gameplay between players across different devices. Users can create or join rooms instantly, enabling private matches with minimal latency.",
+      
+      "The system uses WebSockets for bidirectional communication, ensuring every move is reflected in real time for both players. Game state is centrally managed and synchronized to prevent inconsistencies, with strict validation to ensure legal moves and fair gameplay.",
+      
+      "Room-based architecture allows scalable matchmaking, where each room maintains its own isolated game state. This ensures multiple games can run concurrently without interference, making the system efficient and extensible.",
+      
+      "Performance and responsiveness were key priorities. The application minimizes latency, handles reconnect scenarios gracefully, and ensures a consistent experience even under unstable network conditions."
     ],
-    gallery: ["/dark-web-interface-design.jpg", "/dark-3d-web-experience.jpg", "/dark-interactive-prototype.jpg"],
-    next: { title: "Project Three", slug: "project-three" },
+    gallery: [
+      "/chess-app-cover.png",
+      "/chess-home-screen.png",
+      "/chess-create-room-screen.png",
+      "/chess-game-screen.png"
+    ],
+    next: { title: "AI Wearable Stroke Detection System", slug: "project-three" }
   },
   "project-three": {
-    title: "Project Three",
-    category: "Creative Technology Platform",
+    title: "AI Wearable Stroke Detection System",
+    category: "AI & Healthcare Technology",
     year: "2024",
-    description: "A platform that bridges the gap between creativity and technology.",
-    image: "/dark-creative-technology-platform.jpg",
+    description: "A real-time stroke detection system using wearable sensor data and machine learning for early risk prediction.",
+    image: "/healthmonitor-dashboard.png",
     content: [
-      "Building tools for creators requires understanding both the technical constraints and creative aspirations of the users.",
-      "We designed an interface that gets out of the way, letting the work speak for itself.",
-      "The platform scales from individual artists to enterprise teams without losing its core simplicity.",
+      "An AI-powered healthcare system designed to detect early signs of stroke using real-time data from wearable devices such as smartwatches. The system integrates with Google Fit and Samsung Health APIs to continuously monitor vital signals like heart rate, activity levels, and physiological patterns.",
+      
+      "Machine learning models analyze incoming time-series data to predict potential stroke risks before critical events occur. The system is optimized for low-latency inference, enabling near real-time alerts and proactive intervention.",
+      
+      "Edge computation is leveraged to process data closer to the device, reducing dependency on cloud infrastructure and ensuring faster response times. This approach also enhances privacy by minimizing sensitive data transmission.",
+      
+      "The platform includes intelligent alert mechanisms that notify users or caregivers instantly in case of detected anomalies. The architecture is scalable, reliable, and designed for integration with modern digital health ecosystems."
     ],
-    gallery: ["/dark-platform-dashboard.jpg", "/dark-creative-tools-interface.jpg", "/dark-technology-platform.jpg"],
-    next: { title: "Project Four", slug: "project-four" },
+    gallery: [
+      "/healthmonitor-dashboard.png",
+      "/healthmonitor-analytics.png",
+      "/healthmonitor-connect.png"
+    ],
+    next: { title: "Space Shooter", slug: "project-four" }
   },
   "project-four": {
-    title: "Project Four",
-    category: "Editorial Website",
+    title: "Space Shooter",
+    category: "Frontend Game Development",
     year: "2024",
-    description: "A digital publication that prioritizes reading experience above all else.",
-    image: "/dark-editorial-website-magazine.jpg",
+    description: "A high-performance browser-based space shooter inspired by Chicken Invaders, built with advanced game architecture and real-time rendering.",
+    image: "/space-shooter-landing.png",
     content: [
-      "Typography leads. Every decision was made in service of the written word.",
-      "The design system adapts to content length and type, ensuring each piece gets the presentation it deserves.",
-      "Navigation is minimal by design. Readers should be absorbed in the content, not the interface.",
+      "A fast-paced 2D space shooter built using modern frontend technologies, focusing on smooth gameplay, responsive controls, and optimized rendering.",
+      
+      "The architecture follows AAA game engine patterns including a centralized game loop, event-driven communication, and a finite state machine for seamless transitions between menu, gameplay, pause, and game-over states.",
+      
+      "Performance is a core priority. Object pooling, spatial partitioning, and efficient entity management ensure stable 60 FPS gameplay even with hundreds of active entities on screen.",
+      
+      "Players control a spaceship with fluid movement and shooting mechanics, facing multiple enemy types, power-ups, and boss fights, all enhanced with particle effects, screen shake, and post-processing visuals."
     ],
-    gallery: ["/dark-editorial-typography.jpg", "/dark-magazine-layout-design.jpg", "/placeholder.svg?height=800&width=1200"],
-    next: { title: "Project Five", slug: "project-five" },
+    gallery: [
+      "/space-shooter-landing.png",
+      "/space-shooter-architecture.png",
+      "/space-shooter-gameplay-1.png",
+      "/space-shooter-gameplay-2.png"
+    ],
+    next: { title: "Recommendation Engine", slug: "project-five" }
   },
   "project-five": {
-    title: "Project Five",
-    category: "Digital Product Interface",
+    title: "Recommendation Engine",
+    category: "Machine Learning / Personalization System",
     year: "2024",
-    description: "A product interface that balances power with approachability.",
-    image: "/placeholder.svg?height=900&width=1600",
+    description: "A smart recommendation engine leveraging user clustering, interaction analysis, and caption understanding to deliver highly personalized content.",
+    image: "/recommendation-engine-cover.png",
     content: [
-      "Complex functionality doesn't require complex interfaces. We stripped away everything non-essential.",
-      "Micro-interactions provide constant feedback, making the product feel responsive and alive.",
-      "Accessibility was built in from day one, not bolted on afterward.",
+      "Built a hybrid recommendation system combining user clustering and behavioral interaction analysis to identify patterns and similarities across users.",
+      "Implemented caption analysis using NLP techniques to understand content semantics and improve recommendation relevance.",
+      "Designed the system to continuously learn from user interactions, making recommendations more accurate and adaptive over time.",
+      "Future work focuses on integrating an ethical recommendation layer with well-being scoring and intelligent content filtering to promote healthier user engagement and reduce exposure to harmful or addictive content patterns."
     ],
     gallery: [
-      "/placeholder.svg?height=800&width=1200",
-      "/placeholder.svg?height=800&width=1200",
-      "/placeholder.svg?height=800&width=1200",
+      "/recommendation-engine-cover.png",
+      "/recommendation-feed.png",
+      "/recommendation-wellbeing.png",
+      "/recommendation-mindful-tips.png",
+      "/recommendation-profile-switcher.png",
     ],
-    next: { title: "Project Six", slug: "project-six" },
+    next: { title: "Cafe E-Commerce & Food Delivery Platform", slug: "project-six" },
   },
   "project-six": {
-    title: "Project Six",
-    category: "Experimental Interaction",
+    title: "Cafe E-Commerce & Food Delivery Platform",
+    category: "Full-Stack Web Application",
     year: "2024",
-    description: "An experimental project exploring new paradigms of digital interaction.",
-    image: "/placeholder.svg?height=900&width=1600",
+    description: "A complete cafe ordering platform enabling seamless food discovery, online ordering, and real-time delivery experience.",
+    image: "/ecommerce-hero.png",
     content: [
-      "Experimentation requires the freedom to fail. This project was about pushing boundaries.",
-      "We explored cursor-based interactions that blur the line between interface and art.",
-      "The lessons learned here inform all our commercial work.",
+      "Developed a full-stack e-commerce platform for a cafe, allowing users to browse menus, customize orders, and place them efficiently.",
+      "Implemented a smooth ordering and checkout flow with dynamic cart management and real-time updates for an intuitive user experience.",
+      "Integrated delivery tracking and order status updates to keep users informed throughout the process.",
+      "Focused on performance and responsive design to ensure a seamless experience across devices."
     ],
     gallery: [
-      "/placeholder.svg?height=800&width=1200",
-      "/placeholder.svg?height=800&width=1200",
-      "/placeholder.svg?height=800&width=1200",
+      "/ecommerce-hero.png",
+      "/ecommerce-menu.png",
+      "/ecommerce-signin.png",
+      "/ecommerce-cart-single.png",
+      "/ecommerce-cart-multi.png",
+      "/ecommerce-checkout.png",
     ],
-    next: { title: "Project Seven", slug: "project-seven" },
-  },
-  "project-seven": {
-    title: "Project Seven",
-    category: "Visual Identity System",
-    year: "2023",
-    description: "A visual identity system built for scale and flexibility.",
-    image: "/placeholder.svg?height=900&width=1600",
-    content: [
-      "Identity systems need rules that enable creativity, not restrict it.",
-      "We developed a modular approach that allows for infinite variation within a cohesive framework.",
-      "The system includes guidelines for everything from typography to animation timing.",
-    ],
-    gallery: [
-      "/placeholder.svg?height=800&width=1200",
-      "/placeholder.svg?height=800&width=1200",
-      "/placeholder.svg?height=800&width=1200",
-    ],
-    next: { title: "Project Eight", slug: "project-eight" },
-  },
-  "project-eight": {
-    title: "Project Eight",
-    category: "Immersive Landing Page",
-    year: "2023",
-    description: "A landing page that tells a story through scroll and interaction.",
-    image: "/placeholder.svg?height=900&width=1600",
-    content: [
-      "Landing pages have seconds to make an impression. Every moment counts.",
-      "We choreographed the scroll experience like a film, with precise timing and reveals.",
-      "Performance optimization ensured the experience was smooth across all devices.",
-    ],
-    gallery: [
-      "/placeholder.svg?height=800&width=1200",
-      "/placeholder.svg?height=800&width=1200",
-      "/placeholder.svg?height=800&width=1200",
-    ],
-    next: { title: "Project Nine", slug: "project-nine" },
-  },
-  "project-nine": {
-    title: "Project Nine",
-    category: "Motion-Led Portfolio",
-    year: "2023",
-    description: "A portfolio where motion is the primary design language.",
-    image: "/placeholder.svg?height=900&width=1600",
-    content: [
-      "When your work is about motion, your portfolio must embody that philosophy.",
-      "Every transition was crafted to demonstrate capability while maintaining usability.",
-      "The result is a site that serves as both portfolio and proof of concept.",
-    ],
-    gallery: [
-      "/placeholder.svg?height=800&width=1200",
-      "/placeholder.svg?height=800&width=1200",
-      "/placeholder.svg?height=800&width=1200",
-    ],
-    next: { title: "Project Ten", slug: "project-ten" },
-  },
-  "project-ten": {
-    title: "Project Ten",
-    category: "Conceptual Web Experiment",
-    year: "2023",
-    description: "A conceptual experiment that questions traditional web conventions.",
-    image: "/placeholder.svg?height=900&width=1600",
-    content: [
-      "What happens when you remove all the expected patterns from a website?",
-      "This experiment challenged us to rethink navigation, hierarchy, and flow.",
-      "The insights continue to influence how we approach every project.",
-    ],
-    gallery: [
-      "/placeholder.svg?height=800&width=1200",
-      "/placeholder.svg?height=800&width=1200",
-      "/placeholder.svg?height=800&width=1200",
-    ],
-    next: { title: "Project One", slug: "project-one" },
+    next: { title: "Movie Ticket Booking Platform", slug: "project-one" },
   },
 }
 
